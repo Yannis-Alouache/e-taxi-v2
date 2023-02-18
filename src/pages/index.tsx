@@ -4,6 +4,11 @@ import { Inter } from '@next/font/google'
 import styles from '@/styles/Home.module.css'
 import Navbar from '@/components/navbar'
 import HeroBanner from '@/components/heroBanner'
+import BookingBanner from '@/components/bookingBanner'
+import Services from '@/components/services'
+import Testimonials from '@/components/testimonials'
+import Separator from '@/components/separator'
+import Parteners from '@/components/parteners'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -18,16 +23,19 @@ export default function Home() {
       </Head>
       <Navbar />
       <HeroBanner />
-      <h1>SALUT C TITOU</h1>
-      <h1>SALUT C TITOU</h1>
-      <h1>SALUT C TITOU</h1>
-      <h1>SALUT C TITOU</h1>
-      <h1>SALUT C TITOU</h1>
-      <h1>SALUT C TITOU</h1>
-      <h1>SALUT C TITOU</h1>
-      <h1>SALUT C TITOU</h1>
-      <h1>SALUT C TITOU</h1>
-      <h1>SALUT C TITOU</h1>
+      <BookingBanner />
+      <Services />
+      <Separator />
+      <Testimonials />
+      <Parteners />
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+
     </>
   )
 }
