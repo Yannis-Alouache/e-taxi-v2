@@ -36,15 +36,19 @@ export default function HeroBanner() {
       </div>
       <main>
         <div className="relative px-6 lg:px-8">
-          <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
+          <div className="mx-auto max-w-5xl py-32 sm:py-48 lg:py-56">
             <div className="text-center">
-              <h1 className="text-4xl font-bold tracking-tight text-white-900 sm:text-6xl">
-                Data to enrich your online business
+              <h1 className="text-5xl font-bold tracking-tight text-white-900 sm:text-5xl">
+                Réservez votre Taxi maintenant
               </h1>
-              <div className="mt-10 flex items-center justify-center gap-x-6">
+              <h1 className="text-3xl font-bold tracking-tight text-white-800 sm:text-3xl">
+                06.85.35.74.48
+              </h1>
+              <div className="mt-5 flex items-center justify-center">
                 <Image 
                     src={heroBannerImage}
                     alt="taxi"
+                    width={3000}
                 />
               </div>
             </div>
