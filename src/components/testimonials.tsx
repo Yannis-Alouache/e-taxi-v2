@@ -1,3 +1,4 @@
+import Image from "next/image"
 
 const testimonials = [
     {
@@ -48,7 +49,7 @@ function Testimonials() {
                             </p>
     
                             <div className="flex items-center mt-8 -mx-2">
-                                <img className="object-cover mx-2 rounded-full w-14 shrink-0 h-14 ring-4 ring-gray-300 dark:ring-gray-700" src={testimonial.img} alt="" />
+                                <Image className="object-cover mx-2 rounded-full w-14 shrink-0 h-14 ring-4 ring-gray-300 dark:ring-gray-700" src={testimonial.img} alt="" />
     
                                 <div className="mx-2">
                                     <h1 className="font-semibold text-gray-800">{testimonial.name}</h1>
