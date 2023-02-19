@@ -5,7 +5,7 @@ import styles from "@/styles/Services.module.css"
 const services = [
     {
         title: "trajet citadin rapide",
-        image: "https://img.icons8.com/ios/100/000000/city-block.png",
+        image: "https://img.icons8.com/ios/100/F3C74F/city-block.png",
         alt: "trajet citadin taxi de lille",
         id: "lorem",
         placeholder: "lorem",
@@ -13,7 +13,7 @@ const services = [
     },
     {
         title: "transfert aéroport",
-        image: "https://img.icons8.com/ios/100/000000/airport.png",
+        image: "https://img.icons8.com/ios/100/F3C74F/airport.png",
         alt: "trajet vers aéroport taxi de lille",
         id: "lorem",
         placeholder: "lorem",
@@ -21,7 +21,7 @@ const services = [
     },
     {
         title: "transport de baggage",
-        image: "https://img.icons8.com/ios/100/000000/suitcase.png",
+        image: "https://img.icons8.com/ios/100/F3C74F/suitcase.png",
         alt: "transport de baggage inclut dans le taxi",
         id: "lorem",
         placeholder: "lorem",
@@ -29,7 +29,7 @@ const services = [
     },
     {
         title: "conduite écologique",
-        image: "https://img.icons8.com/ios/100/000000/ecology-button--v1.png",
+        image: "https://img.icons8.com/ios/100/F3C74F/ecology-button--v1.png",
         alt: "conduite écologique du taxi de lille",
         id: "lorem",
         placeholder: "lorem",
