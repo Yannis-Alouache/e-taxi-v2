@@ -2,10 +2,6 @@ import React from 'react'
 import styles from "@/styles/Footer.module.css"
 import { PhoneIcon } from "@heroicons/react/24/outline"
 
-const contacts = [
-    {name: "06.85.35.74.48", icon: <PhoneIcon className='h-6 w-6' />},
-]
-
 function Footer() {
   return (
     <>
