@@ -32,7 +32,7 @@ function BookingBanner() {
                   </div>
 
                   <div className="flex justify-center mt-10 mb-10 xl:mb-0">
-                    <input className="bg-blue-800 px-5 py-3" type="submit" value="Envoyer"/>
+                    <input className="bg-[#9F340A] uppercase font-bold rounded-full cursor-pointer drop-shadow-2xl px-5 py-3 " type="submit" value="Reservez un Taxi"/>
                   </div>
 
             </div>
