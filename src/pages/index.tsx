@@ -9,6 +9,7 @@ import Services from '@/components/services'
 import Testimonials from '@/components/testimonials'
 import Separator from '@/components/separator'
 import Parteners from '@/components/parteners'
+import Footer from '@/components/footer'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -28,14 +29,7 @@ export default function Home() {
       <Separator />
       <Testimonials />
       <Parteners />
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-
+      <Footer />
     </>
   )
 }
