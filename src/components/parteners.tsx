@@ -2,28 +2,33 @@ import React from 'react'
 import Image from 'next/image'
 
 const parteners = [
-    {image: "https://via.placeholder.com/70", alt: "a", id: "0"},
-    {image: "https://via.placeholder.com/70", alt: "b", id: "1"},
-    {image: "https://via.placeholder.com/70", alt: "c", id: "2"},
-    {image: "https://via.placeholder.com/70", alt: "d", id: "3"},
-    {image: "https://via.placeholder.com/70", alt: "e", id: "4"},
+    {image: "partener_logo_auchan.png", alt: "a", id: "0"},
+    {image: "partener_logo_leroy_merlin.png", alt: "b", id: "1"},
+    {image: "partener_logo_losc.png", alt: "c", id: "2"},
+    {image: "partener_logo_decathlon.png", alt: "c", id: "3"},
+    {image: "partener_logo_ikea.png", alt: "c", id: "3"},
 ]
 
 function Parteners() {
   return (
     <div className='mt-10 bg-amber-400'>
-        <div className='container mx-auto px-40 py-10'>
+        <div className='container mx-auto px-30 py-10'>
+            <div className="grid xl:grid-cols-6 sm:grid-cols-1 items-center">
 
-            <div className="grid xl:grid-cols-6 sm:grid-cols-1">
+                <div>
+                    <h3 className='text-gray-900 text-xl uppercase font-bold'>Nos Partenaires</h3>
+                    <h3 className='text-white-900 text-3xl uppercase font-bold'>Et Clients</h3>
+                </div>
                 {parteners.map((partener) => {
                 return (
                     <div key={partener.id}>
                         <div className="relative w-24 h-24 mx-auto">
-                            <Image src={partener.image} alt={partener.alt} fill={true} />
+                            <Image src={require("@/assets/" + partener.image)} alt={partener.alt} fill={false} className="absolute top-1/2 -translate-y-1/2" />
                         </div>
                     </div>
                 )
                 })}
+
             </div>
 
         </div>
