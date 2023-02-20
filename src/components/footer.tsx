@@ -3,12 +3,13 @@ import styles from "@/styles/Footer.module.css"
 import { PhoneIcon } from "@heroicons/react/24/outline"
 
 function Footer() {
+  const year = new Date().getFullYear()
   return (
     <>
         <div className='bg-[#161616]'>
             <div className='container mx-auto px-40 py-20'>
-                <div className='grid xl:grid-cols-3 sm:grid-cols-1 gap-16'>
 
+                <div className='grid xl:grid-cols-3 sm:grid-cols-1 gap-16'>
                     <div>
                         <h3 className='uppercase text-amber-400 text-2xl font-bold mb-3'>about</h3>
                         <p className="text-base font-light leading-relaxed mt-0 mb-4 text-white-700">
@@ -51,7 +52,12 @@ function Footer() {
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
 
+            <div className='bg-[#0C0C0C]'>
+                <div className='container mx-auto px-40 py-10'>
+                <p>© {year} <span className="text-amber-400">E-Taxi-Lille.</span> Tous droits réservés.</p>
                 </div>
             </div>
         </div>
