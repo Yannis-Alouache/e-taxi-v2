@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from "@/styles/Footer.module.css"
 import { PhoneIcon } from "@heroicons/react/24/outline"
+import Link from 'next/link'
 
 function Footer() {
   const year = new Date().getFullYear()
@@ -26,15 +27,15 @@ function Footer() {
                         <div className='flex xl:grid-cols-2 justify-between'>
                             <div className='w-5/12'>
                                 <ul>
-                                    <li className={styles.withSeparator + " mb-1"}><a className={styles.footerLink + " hover:text-amber-400"} href='/'>Accueil</a></li>
-                                    <li className={styles.withSeparator + " mb-1"}><a className={styles.footerLink + " hover:text-amber-400"} href='#bookingBanner'>Reservation</a></li>
-                                    <li className={styles.withSeparator + " mb-1"}><a className={styles.footerLink + " hover:text-amber-400"} href='#services'>Services</a></li>
+                                    <li className={styles.withSeparator + " mb-1"}><Link className={styles.footerLink + " hover:text-amber-400"} href='/'>Accueil</Link></li>
+                                    <li className={styles.withSeparator + " mb-1"}><Link className={styles.footerLink + " hover:text-amber-400"} href='#bookingBanner'>Reservation</Link></li>
+                                    <li className={styles.withSeparator + " mb-1"}><Link className={styles.footerLink + " hover:text-amber-400"} href='#services'>Services</Link></li>
                                 </ul>
                             </div>
                             <div className='w-5/12'>
                                 <ul>
-                                    <li className={styles.withSeparator + " mb-1"}><a className={styles.footerLink + " hover:text-amber-400"} href='#carDetail'>Véhicule</a></li>
-                                    <li className={styles.withSeparator + " mb-1"}><a className={styles.footerLink + " hover:text-amber-400"} href='#testimonials'>Avis Client</a></li>
+                                    <li className={styles.withSeparator + " mb-1"}><Link className={styles.footerLink + " hover:text-amber-400"} href='#carDetail'>Véhicule</Link></li>
+                                    <li className={styles.withSeparator + " mb-1"}><Link className={styles.footerLink + " hover:text-amber-400"} href='#testimonials'>Avis Client</Link></li>
                                 </ul>
                             </div>
                         </div>
