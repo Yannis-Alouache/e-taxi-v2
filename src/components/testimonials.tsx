@@ -31,9 +31,7 @@ function Testimonials() {
         <section className="mb-24">
             <div className="container px-6 py-10 mx-auto">
                 <div className="text-center">
-                    <h2 className='text-5xl xl:mb-4 xl:mt-4 font-bold tracking-tight text-gray-900 sm:text-5xl'>
-                        Nos Avis Clients
-                    </h2>
+                    <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl xl:mb-4 xl:mt-4">Nos Avis Clients</h2>
                 </div>
 
                 <p className="max-w-2xl mx-auto mt-2 text-center text-gray-900">
