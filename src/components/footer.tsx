@@ -26,18 +26,15 @@ function Footer() {
                         <div className='flex xl:grid-cols-2 justify-between'>
                             <div className='w-5/12'>
                                 <ul>
-                                    <li className={styles.withSeparator + " mb-1"}><a className={styles.footerLink + " hover:text-amber-400"} href='#'>lorem</a></li>
-                                    <li className={styles.withSeparator + " mb-1"}><a className={styles.footerLink + " hover:text-amber-400"} href='#'>lorem</a></li>
-                                    <li className={styles.withSeparator + " mb-1"}><a className={styles.footerLink + " hover:text-amber-400"} href='#'>lorem</a></li>
-                                    <li className={styles.withSeparator + " mb-1"}><a className={styles.footerLink + " hover:text-amber-400"} href='#'>lorem</a></li>
+                                    <li className={styles.withSeparator + " mb-1"}><a className={styles.footerLink + " hover:text-amber-400"} href='/'>Accueil</a></li>
+                                    <li className={styles.withSeparator + " mb-1"}><a className={styles.footerLink + " hover:text-amber-400"} href='#bookingBanner'>Reservation</a></li>
+                                    <li className={styles.withSeparator + " mb-1"}><a className={styles.footerLink + " hover:text-amber-400"} href='#services'>Services</a></li>
                                 </ul>
                             </div>
                             <div className='w-5/12'>
                                 <ul>
-                                    <li className={styles.withSeparator + " mb-1"}><a className={styles.footerLink + " hover:text-amber-400"} href='#'>lorem</a></li>
-                                    <li className={styles.withSeparator + " mb-1"}><a className={styles.footerLink + " hover:text-amber-400"} href='#'>lorem</a></li>
-                                    <li className={styles.withSeparator + " mb-1"}><a className={styles.footerLink + " hover:text-amber-400"} href='#'>lorem</a></li>
-                                    <li className={styles.withSeparator + " mb-1"}><a className={styles.footerLink + " hover:text-amber-400"} href='#'>lorem</a></li>
+                                    <li className={styles.withSeparator + " mb-1"}><a className={styles.footerLink + " hover:text-amber-400"} href='#carDetail'>Véhicule</a></li>
+                                    <li className={styles.withSeparator + " mb-1"}><a className={styles.footerLink + " hover:text-amber-400"} href='#testimonials'>Avis Client</a></li>
                                 </ul>
                             </div>
                         </div>
