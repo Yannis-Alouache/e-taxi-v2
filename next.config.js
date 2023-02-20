@@ -18,7 +18,19 @@ const nextConfig = {
       {
         protocol: "https",
         hostname: "tailwindui.com"
-      }
+      },
+      {
+        protocol: "https",
+        hostname: "img.autotrader.co.za"
+      },
+      {
+        protocol: "https",
+        hostname: "alphubel.ch"
+      },
+      {
+        protocol: "https",
+        hostname: "car-images.bauersecure.com"
+      },
     ]
   }
 }
