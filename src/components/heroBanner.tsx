@@ -8,7 +8,7 @@ import heroBannerImage from "../assets/hero_banner_image.png"
 export default function HeroBanner() {
 
   return (
-    <div className="isolate bg-[url('../assets/hero_banner_background.jpg')] bg-no-repeat -mt-14 ">
+    <div id='heroBanner' className="isolate bg-[url('../assets/hero_banner_background.jpg')] bg-no-repeat -mt-14 ">
       <main>
         <div className="relative px-6 lg:px-8">
           <div className="mx-auto max-w-5xl py-32 sm:py-48 lg:py-56">

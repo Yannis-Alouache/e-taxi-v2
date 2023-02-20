@@ -11,7 +11,7 @@ const inputs = [
 function BookingBanner() {
   return (
     <>
-        <div className='xl:h-80 bg-amber-400 -mt-[4.35em] pt-28 md:pt-28 xl:pt-0 flex items-center'>
+        <div id="bookingBanner" className='xl:h-80 bg-amber-400 -mt-[4.35em] pt-28 md:pt-28 xl:pt-0 flex items-center'>
             <div className='container mx-auto px-5'>
 
                   <div className="grid xl:grid-cols-4 sm:grid-cols-1 gap-3">
