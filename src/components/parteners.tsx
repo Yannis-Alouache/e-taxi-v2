@@ -6,7 +6,7 @@ const parteners = [
     {image: "partener_logo_leroy_merlin.png", alt: "b", id: "1"},
     {image: "partener_logo_losc.png", alt: "c", id: "2"},
     {image: "partener_logo_decathlon.png", alt: "c", id: "3"},
-    {image: "partener_logo_ikea.png", alt: "c", id: "3"},
+    {image: "partener_logo_ikea.png", alt: "c", id: "4"},
 ]
 
 function Parteners() {
