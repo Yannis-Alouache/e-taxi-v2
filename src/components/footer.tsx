@@ -55,7 +55,7 @@ function Footer() {
 
             <div className='bg-[#0C0C0C]'>
                 <div className='container mx-auto px-40 py-10'>
-                <p>© {year} <span className="text-amber-400">E-Taxi-Lille.</span> Tous droits réservés.</p>
+                    <p>© {year} <span className="text-amber-400">E-Taxi-Lille.</span> Tous droits réservés.</p>
                 </div>
             </div>
         </div>
