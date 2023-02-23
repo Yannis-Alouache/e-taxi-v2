@@ -12,8 +12,8 @@ const parteners = [
 function Parteners() {
   return (
     <div id='parteners' className='mt-10 bg-amber-400'>
-        <div className='container mx-auto px-30 py-10'>
-            <div className="grid xl:grid-cols-6 sm:grid-cols-1 items-center">
+        <div className='xl:container xl:mx-auto lg:px-10 py-10'>
+            <div className="grid xl:grid-cols-6 sm:grid-cols-1 lg:grid-cols-6 items-center">
 
                 <div>
                     <h3 className='text-gray-900 text-xl uppercase font-bold'>Nos Partenaires</h3>
