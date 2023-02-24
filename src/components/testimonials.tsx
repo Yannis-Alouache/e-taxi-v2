@@ -29,7 +29,7 @@ function Testimonials() {
   return (
     <>
         <section id="testimonials" className="mb-24">
-            <div className="container px-6 py-10 mx-auto">
+            <div className="container mx-auto lg:px-6 px-6 py-10">
                 <div className="text-center">
                     <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl xl:mb-4 xl:mt-4">Nos Avis Clients</h2>
                 </div>

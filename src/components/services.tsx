@@ -41,7 +41,7 @@ function Services() {
   return (
     <>
         <div id='services' className='mb-32 mt-24'>
-            <div className='container mx-auto lg:px-0 px-40 py-10'>
+            <div className='container mx-auto lg:px-6 px-40 py-10'>
                 <div className="text-center">
                     <h2 className="text-3xl font-bold tracking-tight lg:mb-10 text-gray-900 sm:text-4xl xl:mb-20">Nos Services</h2>
                     
