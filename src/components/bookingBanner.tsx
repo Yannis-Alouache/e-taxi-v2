@@ -155,7 +155,7 @@ function BookingBanner() {
                     ? "block error w-full rounded-md text-gray-900 focus:ring-rose-500 focus:border-2 focus:border-rose-500 border-2 border-rose-500 sm:text-sm xl:text-base px-10 py-3"
                     : "block w-full rounded-md text-gray-900 border-gray-300 sm:text-sm xl:text-base focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 px-10 py-3" }
                     />
-                  <Combobox.Options className="bg-white z-10 text-gray-900 absolute transform rounded-md inline-block top-[110%] w-[160%]">
+                  <Combobox.Options className="bg-white z-10 text-gray-900 absolute transform rounded-md inline-block top-[110%] md:w-[200%] lg:w-[160%] w-[160%]">
                     {departData.map((address) => (
                       <Combobox.Option className="py-2 px-5 cursor-pointer rounded-md hover:bg-slate-50 flex" key={address as Key} value={address} onClick={() => setAddressDepart(address)}>
                         <MapPinIcon className="w-6 mr-3 text-gray-400"/> 
