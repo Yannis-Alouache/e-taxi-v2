@@ -139,10 +139,9 @@ function BookingBanner() {
 
   return (
     <>
-      <div id="bookingBanner" className='xl:h-80 bg-amber-400 -mt-[4.35em] pt-28 md:pt-28 xl:pt-0 flex items-center'>
+      <div id="bookingBanner" className='xl:h-80 bg-amber-400 -mt-[4.35em] pt-28 md:pt-28 xl:pt-0 flex items-center justify-center'>
           <div className='lg:container lg:mx-auto px-5 lg:px-5  '>
-
-            <div className="grid xl:grid-cols-4 lg:grid-cols-4 md:grid-cols-4 gap-3">
+            <div className="grid xl:grid-cols-4 lg:grid-cols-4 md:grid-cols-4 sm:grid-cols-2 gap-3">
     
               <div className="relative mt-1 rounded-md shadow-sm">
                 <Combobox value={addressDepart} name="depart">
@@ -155,7 +154,7 @@ function BookingBanner() {
                     ? "block error w-full rounded-md text-gray-900 focus:ring-rose-500 focus:border-2 focus:border-rose-500 border-2 border-rose-500 sm:text-sm xl:text-base px-10 py-3"
                     : "block w-full rounded-md text-gray-900 border-gray-300 sm:text-sm xl:text-base focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 px-10 py-3" }
                     />
-                  <Combobox.Options className="bg-white z-10 text-gray-900 absolute transform rounded-md inline-block top-[110%] md:w-[200%] lg:w-[160%] w-[160%]">
+                  <Combobox.Options className="bg-white z-20 text-gray-900 absolute transform rounded-md inline-block top-[110%] md:w-[200%] lg:w-[160%] w-[160%]">
                     {departData.map((address) => (
                       <Combobox.Option className="py-2 px-5 cursor-pointer rounded-md hover:bg-slate-50 flex" key={address as Key} value={address} onClick={() => setAddressDepart(address)}>
                         <MapPinIcon className="w-6 mr-3 text-gray-400"/> 
@@ -177,7 +176,7 @@ function BookingBanner() {
                     ? "block error w-full rounded-md text-gray-900 focus:ring-rose-500 focus:border-2 focus:border-rose-500 border-2 border-rose-500 sm:text-sm xl:text-base px-10 py-3"
                     : "block w-full rounded-md text-gray-900 border-gray-300 sm:text-sm xl:text-base focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 px-10 py-3" }
                     />
-                  <Combobox.Options className="bg-white z-10 text-gray-900 absolute transform rounded-md inline-block top-[110%] w-[160%]">
+                  <Combobox.Options className="bg-white z-20 text-gray-900 absolute transform rounded-md inline-block top-[110%] w-[160%] sm:w-[120%]">
                     {arriveData.map((address) => (
                       <Combobox.Option className="py-2 px-5 cursor-pointer rounded-md hover:bg-slate-50 flex" key={address as Key} value={address} onClick={() => setAddressArrive(address)}>
                         <MapPinIcon className="w-6 mr-3 text-gray-400"/> 
