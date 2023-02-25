@@ -7,7 +7,7 @@ function CarDetail() {
       <div className="container mx-auto md:py-0 lg:py-0 xl:py-0 lg:px-6 sm:px-6 px-4">
       <div className="grid grid-cols-1 gap-y-16 gap-x-8 lg:grid-cols-1">
         <div>
-          <h2 className="text-3xl text-center font-bold tracking-tight text-gray-900 sm:text-4xl mb-10">Le Véhicule</h2>
+          <h2 className="text-3xl text-center font-bold tracking-tight text-gray-900 sm:text-4xl mb-10 xl:mt-16 lg:mt-12 md:mt-12 sm:mt-10">Le Véhicule</h2>
           <p className="mt-4 text-gray-500">
             E-Taxi-Lille vous propose une un véhicule de qualité supérieure,
             la Mercedes 220d, pour offrir à ses clients une expérience de voyage luxueuse et sécurisée.
