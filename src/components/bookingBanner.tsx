@@ -1,5 +1,5 @@
 import { PhoneIcon, MapPinIcon, CalendarDaysIcon } from "@heroicons/react/24/solid"
-import { Key, useEffect, useState } from "react"
+import { Key, useState } from "react"
 import { Combobox } from '@headlessui/react'
 import axios from "axios"
 import "react-datetime/css/react-datetime.css";
@@ -24,7 +24,7 @@ function BookingBanner() {
   const [addressArriveError, setAddressArriveError] = useState<Boolean>(false)
   const [phoneError, setPhoneError] = useState<Boolean>(false)
   const [dateTimeError, setDateTimeError] = useState<Boolean>(false)
-  
+
 
   async function handleQueryChange(text: string, _for?: string) {
     let query = ""
