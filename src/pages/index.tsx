@@ -27,6 +27,7 @@ export default function Home() {
       <HeroBanner />
       <BookingBanner />
       <Services />
+      <Separator />
       <CarDetail />
       <Separator />
       <Testimonials />
