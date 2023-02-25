@@ -8,7 +8,7 @@ function Footer() {
   return (
     <>
         <div className='bg-[#161616]'>
-            <div className='xl:container xl:mx-auto px-40 md:px-5 sm:px-5 lg:px-10 py-20'>
+            <div className='xl:container xl:mx-auto px-40 md:px-5 sm:px-5 lg:px-10 px-5 py-20'>
 
                 <div className='grid xl:grid-cols-3 md:grid-cols-1 sm:grid-cols-1 lg:grid-cols-3 gap-16'>
                     <div>
@@ -54,7 +54,7 @@ function Footer() {
             </div>
 
             <div className='bg-[#0C0C0C]'>
-                <div className='xl:container xl:mx-auto px-40 sm:px-5 md:px-5 lg:px-10 py-10'>
+                <div className='xl:container xl:mx-auto px-40 sm:px-5 md:px-5 lg:px-10 py-10 px-5'>
                     <p>© {year} <span className="text-amber-400">E-Taxi-Lille.</span> Tous droits réservés.</p>
                 </div>
             </div>
