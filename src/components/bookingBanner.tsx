@@ -105,16 +105,16 @@ function BookingBanner() {
     }
 
     const formData = {
-      "addressD": addressDepart,
-      "addressA": addressArrive,
-      "phone": telephone,
+      "departure_address": addressDepart,
+      "arrival_address": addressArrive,
+      "phone_number": telephone,
       "date": dateTime
     }
 
     console.table(formData);
 
     const { status, data } = await axios.post(
-      "/api/reservations",
+      "/api/reservations/create",
       formData,
       {
         headers: {
