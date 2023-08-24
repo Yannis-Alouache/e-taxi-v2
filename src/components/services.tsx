@@ -7,6 +7,7 @@ const services = [
         title: "trajet citadin rapide",
         image: "https://img.icons8.com/ios/100/F3C74F/city-block.png",
         alt: "trajet citadin taxi de lille",
+        text: "Nos taxis vous garantissent des déplacements efficaces en ville, en évitant les retards. Voyagez rapidement et en toute confiance avec nos chauffeurs expérimentés, pour arriver à destination sans soucis.",
         id: "lorem",
         placeholder: "lorem",
         key: "0"
@@ -15,6 +16,7 @@ const services = [
         title: "transfert aéroport",
         image: "https://img.icons8.com/ios/100/F3C74F/airport.png",
         alt: "trajet vers aéroport taxi de lille",
+        text: "Facilitez vos déplacements vers l'aéroport de Lille-Lesquin grâce à nos chauffeurs expérimentés. Profitez de trajets en toute quiétude, alliant ponctualité et confort, pour un début ou une fin de voyage en toute sérénité.",
         id: "lorem",
         placeholder: "lorem",
         key: "1"
@@ -23,6 +25,7 @@ const services = [
         title: "transport de baggage",
         image: "https://img.icons8.com/ios/100/F3C74F/suitcase.png",
         alt: "transport de baggage inclut dans le taxi",
+        text: "Facilitez le transport de vos bagages vers votre destination. Nos chauffeurs expérimentés se chargent de vos effets, vous permettant de voyager sans encombre. Profitez de trajets confortables et tranquilles, en sachant que vos bagages sont entre de bonnes mains.",
         id: "lorem",
         placeholder: "lorem",
         key: "2"
@@ -31,6 +34,7 @@ const services = [
         title: "conduite écologique",
         image: "https://img.icons8.com/ios/100/F3C74F/ecology-button--v1.png",
         alt: "conduite écologique du taxi de lille",
+        text: "Optez pour une conduite écologique avec nos chauffeurs experts. Nous mettons en œuvre des pratiques respectueuses de l'environnement pour des trajets plus durables. Profitez de voyages confortables tout en réduisant votre empreinte carbone.",
         id: "lorem",
         placeholder: "lorem",
         key: "3"
@@ -54,11 +58,7 @@ function Services() {
                                     </div>
                                     <h3 className='text-gray-900 text-mb sm:text-xl sm:mb-1 md:mb-1 lg:mb-3 xl:mt-10 xl:mb-3 uppercase font-bold'>{service.title}</h3>
                                     <p className="text-base font-light leading-relaxed mt-0 mb-4 text-gray-800 px-4">
-                                        I will be the leader of a company that ends up being worth billions
-                                        of dollars, because I got the answers. I understand culture. I am
-                                        the nucleus. I think that’s a responsibility that I have, to push
-                                        possibilities, to show people, this is the level that things could
-                                        be at.
+                                        {service.text}
                                     </p>
                                 </div>
                             )

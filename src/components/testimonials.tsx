@@ -2,7 +2,7 @@ import Image from "next/image"
 
 const testimonials = [
     {
-        text: '“Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore quibusdam ducimus libero ad tempora doloribus expedita laborum saepe voluptas perferendis delectus assumenda rerum, culpa aperiam dolorum, obcaecati corrupti aspernatur a.”.',
+        text: "“Excellent service. J'ai été contraint de contacter en urgence suite à une panne de ma voiture. En un temps record, le taxi est arrivé et j'ai pu attraper mon train grâce à leur réactivité exemplaire. Je recommande vivement cette solution rapide et efficace !”.",
         img: "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80",
         name: "Robert",
         work_function: "CTO, Robert Consultency",
@@ -35,8 +35,7 @@ function Testimonials() {
                 </div>
 
                 <p className="max-w-2xl mx-auto mt-2 text-center text-gray-900">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo incidunt ex placeat modi magni quia error
-                    alias, adipisci rem similique, at omnis eligendi optio eos harum.
+                    Voyez donc ce que nos clients pensent de nous !
                 </p>
 
                 <section className="grid grid-cols-1 gap-8 mt-8 xl:mt-20 lg:grid-cols-2 xl:grid-cols-3">
