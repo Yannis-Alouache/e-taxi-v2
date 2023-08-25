@@ -1,12 +1,11 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import type { NextApiRequest, NextApiResponse } from 'next'
-import { reservation } from '@prisma/client'
-import { createReservation } from '@/models/reservation'
+import * as nodemailer from 'nodemailer'
+
 
 type Data = {
   type: string,
   message: string
-  reservation: reservation
 }
 
 export default async function handler(
@@ -18,8 +17,36 @@ export default async function handler(
 
     switch (method) {
       case 'POST' :
-        const reservation: reservation = await createReservation(departure_address, arrival_address, phone_number, date)
-        res.status(200).json({type: 'success', message: "reservation successfull", reservation: reservation})
+        const transporter = nodemailer.createTransport({
+          service: "gmail",
+          auth: {
+            user: process.env.MAILER_MAIL,
+            pass: process.env.MAILER_PASSWORD,
+          },
+        });
+
+        const html = 
+        "<p><strong>adresse de départ : </strong>" + departure_address + "</p>" +
+        "<p><strong>adresse d'arrivé : </strong>" + arrival_address + "</p>" +
+        "<p><strong>Numéro de téléphone : </strong>" + phone_number + "</p>" +
+        "<p><strong>Date et heure : </strong>" + date + "</p>" +
+        "<p>🚩Appeller pour confirmer RDV 🚩</p>";
+
+
+        const mailOptions = {
+          from: process.env.MAILER_MAIL,
+          to: process.env.MAILER_MAIL2,
+          subject: "🚕 Nouvelle Réservation sur le site ! 🚕",
+          html: html,
+        };
+
+        transporter.sendMail(mailOptions, function (error, info) {
+          if (error) {
+            res.status(200).json({type: 'failure', message: "Problème serveur"})
+          } else {
+            res.status(200).json({type: 'success', message: "reservation successfull"})
+          }
+        });
         break
       default :
         res.setHeader('Allow', ['POST'])
