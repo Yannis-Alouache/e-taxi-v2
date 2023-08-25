@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react'
 
 
@@ -17,7 +18,7 @@ function BlogUnit(props: any) {
                             <div className="space-y-6">
                                 <div>
                                     <h2 className="text-2xl font-bold leading-8 tracking-tight">
-                                        <a className="text-gray-700" href={"/blog/" + props.url}>{props.title}</a>
+                                        <Link className="text-gray-700" href={"/blog/" + props.url}>{props.title}</Link>
                                     </h2>
                                 </div>
                                 <div className="prose max-w-none text-gray-500 truncate">
@@ -25,7 +26,7 @@ function BlogUnit(props: any) {
                                 </div>
                             </div>
                             <div className="text-base font-medium leading-6">
-                                <a className="text-yellow-400 hover:text-yellow-500 dark:hover:text-primary-400" href={"/blog/" + props.url}>En Savoir Plus →</a>
+                                <Link className="text-yellow-400 hover:text-yellow-500 dark:hover:text-primary-400" href={"/blog/" + props.url}>En Savoir Plus →</Link>
                             </div>
                         </div>
                     </div>

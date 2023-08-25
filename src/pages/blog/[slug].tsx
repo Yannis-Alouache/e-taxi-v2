@@ -3,6 +3,7 @@ import BlogNavBar from '@/components/blogNavBar';
 import Footer from '@/components/footer';
 import Image from 'next/image';
 import { GetStaticPaths, GetStaticProps } from 'next';
+import Link from 'next/link';
 
 export const getStaticPaths: GetStaticPaths = async () => {
 
@@ -39,7 +40,7 @@ export default function Article({data}: any) {
                 <div className="w-full px-4 md:px-6 text-xl text-gray-800 leading-normal font-serif">
                     <div className="font-sans">
                         <p className="text-base md:text-sm text-yellow-500 font-bold">
-                            &lt;<a href="./" className="text-base md:text-sm text-yellow-500 font-bold uppercase no-underline hover:underline">Retourner sur le blog</a>
+                            &lt;<Link href="./" className="text-base md:text-sm text-yellow-500 font-bold uppercase no-underline hover:underline">Retourner sur le blog</Link>
                         </p>
                         <h1 className="font-bold font-sans break-normal text-gray-900 pt-6 pb-2 text-3xl md:text-4xl">
                             {data.title}

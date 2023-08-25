@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import { navigationData } from './navbar'
+import Link from 'next/link'
 
 const BlogMobileNav = () => {
   const [navShow, setNavShow] = useState(false)
@@ -58,13 +59,13 @@ const BlogMobileNav = () => {
         <nav className="fixed mt-8 h-full">
           {navigationData.map((link) => (
             <div key={link.name} className="px-12 py-4">
-              <a
+              <Link
                 href={link.href}
                 className="text-2xl font-bold tracking-widest text-gray-900 dark:text-gray-100"
                 onClick={onToggleNav}
               >
                 {link.name}
-              </a>
+              </Link>
             </div>
           ))}
         </nav>
