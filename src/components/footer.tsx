@@ -14,11 +14,7 @@ function Footer() {
                     <div>
                         <h3 className='uppercase text-amber-400 text-2xl font-bold mb-3'>about</h3>
                         <p className="text-base font-light leading-relaxed mt-0 mb-4 text-white-700">
-                            I will be the leader of a company that ends up being worth billions
-                            of dollars, because I got the answers. I understand culture. I am
-                            the nucleus. I think that’s a responsibility that I have, to push
-                            possibilities, to show people, this is the level that things could
-                            be at.
+                        Chez E-Taxi Lille, nous sommes votre choix de confiance pour des déplacements en taxi dans la région. Avec une équipe de chauffeurs expérimentés et une flotte de véhicules modernes, nous nous engageons à vous offrir des trajets confortables et sécurisés. Que ce soit pour des courses en ville, des transferts vers l'aéroport ou d'autres besoins de déplacement, comptez sur E-Taxi Lille pour vous conduire avec fiabilité vers votre destination.
                         </p>
                     </div>
 

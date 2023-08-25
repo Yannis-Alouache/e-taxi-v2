@@ -8,12 +8,13 @@ import Image from 'next/image'
 import navBarLogo from "@/assets/navbar_logo.png"
 
 
-const navigation = [
-  { name: 'Accueil', href: '#' },
+export const navigationData = [
+  { name: 'Accueil', href: '/' },
   { name: 'Reservation', href: '#bookingBanner' },
   { name: 'Services', href: '#services' },
   { name: 'Véhicule', href: '#carDetail' },
   { name: 'Avis Client', href: '#testimonials' },
+  { name: 'Blog', href: "blog" }
 ]
 
 
@@ -37,7 +38,7 @@ export default function Navbar() {
         </button>
       </div>
       <div className="hidden lg:flex lg:gap-x-12">
-        {navigation.map((item) => (
+        {navigationData.map((item) => (
           <a key={item.name} href={item.href} className="text-sm font-semibold leading-6 text-white-900 hover:underline">
             {item.name}
           </a>
@@ -64,7 +65,7 @@ export default function Navbar() {
         <div className="mt-6 flow-root">
           <div className="-my-6 divide-y divide-gray-500/10">
             <div className="space-y-2 py-6">
-              {navigation.map((item) => (
+              {navigationData.map((item) => (
                 <a
                   key={item.name}
                   href={item.href}

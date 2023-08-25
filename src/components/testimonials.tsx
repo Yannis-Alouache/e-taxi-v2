@@ -1,25 +1,23 @@
 import Image from "next/image"
+import userLogo from "../assets/user.png"
 
 const testimonials = [
     {
-        text: "“Excellent service. J'ai été contraint de contacter en urgence suite à une panne de ma voiture. En un temps record, le taxi est arrivé et j'ai pu attraper mon train grâce à leur réactivité exemplaire. Je recommande vivement cette solution rapide et efficace !”.",
-        img: "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80",
-        name: "Robert",
-        work_function: "CTO, Robert Consultency",
+        text: "“Excellent service. J'ai été contraint de contacter en urgence suite à une panne de ma voiture. En un temps record, le taxi est arrivé et j'ai pu attraper mon train grâce à leur réactivité exemplaire. Je recommande vivement cette solution rapide et efficace !”",
+        img: userLogo,
+        name: "Léa Solé",
         key: "0"
     },
     {
-        text: '“Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore quibusdam ducimus libero ad tempora doloribus expedita laborum saepe voluptas perferendis delectus assumenda rerum, culpa aperiam dolorum, obcaecati corrupti aspernatur a.”.',
-        img: "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80",
-        name: "Robert",
-        work_function: "CTO, Robert Consultency",
+        text: "“J'ai réservé ce taxi à Lille pour un déplacement vers l'aéroport de Charles de Gaulle. Le chauffeur était ponctuel et sympathique, conduit en toute sécurité.”",
+        img: userLogo,
+        name: "Christophe Derocles",
         key: "1"
     },
     {
-        text: '“Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore quibusdam ducimus libero ad tempora doloribus expedita laborum saepe voluptas perferendis delectus assumenda rerum, culpa aperiam dolorum, obcaecati corrupti aspernatur a.”.',
-        img: "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80",
-        name: "Robert",
-        work_function: "CTO, Robert Consultency",
+        text: "“Service EXCELLENT ! Ponctualité, professionnalisme, gentillesse. Nous avons utilisé les services de E-Taxi Lille pour nous rendre dans notre famille à Arras, puis Paris et gares de Lille. C'était à chaque fois parfait. Merci beaucoup. Je recommande à 1000%”",
+        img: userLogo,
+        name: "Lucille Martin",
         key: "2"
     },
 
@@ -43,7 +41,7 @@ function Testimonials() {
 
                     {testimonials.map((testimonial) => {
                         return (
-                            <div className="p-8 border rounded-lg border-amber-400" key={testimonial.key}>
+                            <div className="p-8 border rounded-lg border-amber-400 flex flex-col justify-between" key={testimonial.key}>
                                 <p className="leading-loose text-gray-500">
                                     {testimonial.text}
                                 </p>
@@ -53,7 +51,6 @@ function Testimonials() {
         
                                     <div className="mx-2">
                                         <h1 className="font-semibold text-gray-800">{testimonial.name}</h1>
-                                        <span className="text-sm text-gray-500">{testimonial.work_function}</span>
                                     </div>
                                 </div>
                             </div>
