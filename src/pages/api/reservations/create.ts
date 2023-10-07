@@ -5,7 +5,8 @@ import * as nodemailer from 'nodemailer'
 
 type Data = {
   type: string,
-  message: string
+  message: string,
+  error?: any
 }
 
 export default async function handler(
@@ -42,7 +43,7 @@ export default async function handler(
 
         transporter.sendMail(mailOptions, function (error, info) {
           if (error) {
-            res.status(200).json({type: 'failure', message: "Problème serveur"})
+            res.status(200).json({type: 'failure', message: "Problème serveur", error: error})
           } else {
             res.status(200).json({type: 'success', message: "reservation successfull"})
           }
