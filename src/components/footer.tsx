@@ -24,14 +24,15 @@ function Footer() {
                             <div className='w-5/12'>
                                 <ul>
                                     <li className={styles.withSeparator + " mb-1"}><Link className={styles.footerLink + " hover:text-amber-400"} href='/'>Accueil</Link></li>
-                                    <li className={styles.withSeparator + " mb-1"}><Link className={styles.footerLink + " hover:text-amber-400"} href='#bookingBanner'>Reservation</Link></li>
-                                    <li className={styles.withSeparator + " mb-1"}><Link className={styles.footerLink + " hover:text-amber-400"} href='#services'>Services</Link></li>
+                                    <li className={styles.withSeparator + " mb-1"}><Link className={styles.footerLink + " hover:text-amber-400"} href='/#bookingBanner'>Reservation</Link></li>
+                                    <li className={styles.withSeparator + " mb-1"}><Link className={styles.footerLink + " hover:text-amber-400"} href='/#services'>Services</Link></li>
                                 </ul>
                             </div>
                             <div className='w-5/12'>
                                 <ul>
-                                    <li className={styles.withSeparator + " mb-1"}><Link className={styles.footerLink + " hover:text-amber-400"} href='#carDetail'>Véhicule</Link></li>
-                                    <li className={styles.withSeparator + " mb-1"}><Link className={styles.footerLink + " hover:text-amber-400"} href='#testimonials'>Avis Client</Link></li>
+                                    <li className={styles.withSeparator + " mb-1"}><Link className={styles.footerLink + " hover:text-amber-400"} href='/#carDetail'>Véhicule</Link></li>
+                                    <li className={styles.withSeparator + " mb-1"}><Link className={styles.footerLink + " hover:text-amber-400"} href='/#testimonials'>Avis Client</Link></li>
+                                    <li className={styles.withSeparator + " mb-1"}><Link className={styles.footerLink + " hover:text-amber-400"} href='/blog'>Blog</Link></li>
                                 </ul>
                             </div>
                         </div>
