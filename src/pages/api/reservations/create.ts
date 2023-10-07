@@ -37,7 +37,7 @@ export default async function handler(
         const mailOptions = {
           from: process.env.MAILER_MAIL,
           to: process.env.MAILER_MAIL2,
-          subject: "🚕 Nouvelle Réservation sur le site ! 🚕",
+          subject: "Nouvelle Réservation sur le site !",
           html: html,
         };
 
