@@ -27,11 +27,13 @@ export default async function handler(
         });
 
         const html = 
-        "<p><strong>adresse de départ : </strong>" + departure_address + "</p>" +
-        "<p><strong>adresse d'arrivé : </strong>" + arrival_address + "</p>" +
-        "<p><strong>Numéro de téléphone : </strong>" + phone_number + "</p>" +
-        "<p><strong>Date et heure : </strong>" + date + "</p>" +
-        "<p>Appeller pour confirmer RDV</p>";
+        "<html>" +
+          "<p><strong>adresse de départ : </strong>" + departure_address + "</p>" +
+          "<p><strong>adresse d'arrivé : </strong>" + arrival_address + "</p>" +
+          "<p><strong>Numéro de téléphone : </strong>" + phone_number + "</p>" +
+          "<p><strong>Date et heure : </strong>" + date + "</p>" +
+          "<p>Appeller pour confirmer RDV</p>" +
+        "</html>";
 
 
         const mailOptions = {
