@@ -31,7 +31,7 @@ export default async function handler(
         "<p><strong>adresse d'arrivé : </strong>" + arrival_address + "</p>" +
         "<p><strong>Numéro de téléphone : </strong>" + phone_number + "</p>" +
         "<p><strong>Date et heure : </strong>" + date + "</p>" +
-        "<p>🚩Appeller pour confirmer RDV 🚩</p>";
+        "<p>Appeller pour confirmer RDV</p>";
 
 
         const mailOptions = {
