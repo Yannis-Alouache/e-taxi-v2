@@ -4,6 +4,8 @@ import Footer from '@/components/footer';
 import Image from 'next/image';
 import { GetStaticPaths, GetStaticProps } from 'next';
 import Link from 'next/link';
+import Navbar from '@/components/navbar';
+import HeroBanner from '@/components/heroBanner';
 
 export const getStaticPaths: GetStaticPaths = async () => {
 
@@ -35,20 +37,21 @@ export const getStaticProps: GetStaticProps<{data: any}> = async (context) => {
 export default function Article({data}: any) {
     return (
         <>
-            <BlogNavBar/>
+            <Navbar />
+            <HeroBanner isBlogPage={true} />
             <section className='mx-auto py-20 max-w-3xl px-4 sm:px-6 xl:max-w-5xl xl:px-0'>
-                <div className="w-full px-4 md:px-6 text-xl text-gray-800 leading-normal font-serif">
+                <div className="w-full px-4 md:px-6 text-xl text-gray-800 leading-normal">
                     <div className="font-sans">
                         <p className="text-base md:text-sm text-yellow-500 font-bold">
-                            &lt;<Link href="./" className="text-base md:text-sm text-yellow-500 font-bold uppercase no-underline hover:underline">Retourner sur le blog</Link>
+                            <Link href="./" className="text-base md:text-sm text-yellow-500 font-bold uppercase no-underline hover:underline">&lt; Retourner sur le blog</Link>
                         </p>
                         <h1 className="font-bold font-sans break-normal text-gray-900 pt-6 pb-2 text-3xl md:text-4xl">
                             {data.title}
                         </h1>
-                        <p className="text-sm md:text-base font-normal text-gray-600">{"Publié le " + data.date}</p>
+                        <p className="text-sm md:text-base font-normal text-yellow-500">{"Publié le " + data.date}</p>
                     </div>
 
-                    <p className="py-6">
+                    <p className="py-6 ">
                         {data.subText}
 			        </p>
 
@@ -67,7 +70,7 @@ export default function Article({data}: any) {
                         return (
                             <div key={index}>
                                 <h3 className="py-2 text-3xl font-bold">{title}</h3>
-                                <p className="py-5">{data.sectionContent[index]}</p>
+                                <p className="pb-8">{data.sectionContent[index]}</p>
                             </div>
                         )
                     })}
@@ -77,7 +80,7 @@ export default function Article({data}: any) {
                     {data.faqs.map(function(data: any, index: any) {
                         return (
                             <div key={index}>
-                                <h4 className="py-4 text-2xl font-bold">{data.title}</h4>
+                                <h4 className="py-4 text-2xl font-bold"> - {data.title}</h4>
                                 <p className="py-2">{data.text}</p>
                             </div>
                         )

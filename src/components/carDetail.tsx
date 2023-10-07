@@ -1,6 +1,11 @@
 import Image from 'next/image'
 import React from 'react'
 
+import Merco1 from '../assets/merco-1.webp'
+import Merco2 from '../assets/merco-2.webp'
+import Merco3 from '../assets/merco-3.webp'
+import Merco4 from '../assets/merco-4.webp'
+
 function CarDetail() {
   return (
     <div id='carDetail'>
@@ -23,8 +28,8 @@ function CarDetail() {
 
           <div>
             <Image
-              src="https://img.autotrader.co.za/13604807/Crop800x600"
-              alt="Walnut card tray with white powder coated steel divider and 3 punchout holes."
+              src={Merco1}
+              alt="Véhicule de transport confortable pour vos déplacements | E-Taxi"
               width="0"
               height="0"
               sizes="100vw"
@@ -34,8 +39,8 @@ function CarDetail() {
 
           <div>
             <Image
-              src="https://img.autotrader.co.za/13604832/Crop800x600"
-              alt="Top down view of walnut card tray with embedded magnets and card groove."
+              src={Merco2}
+              alt="Véhicule de transport confortable pour vos déplacements | E-Taxi"
               width="0"
               height="0"
               sizes="100vw"
@@ -45,8 +50,8 @@ function CarDetail() {
 
           <div>
             <Image
-              src="https://alphubel.ch/limousine-service/cms/u/2016/08/E220-Nappa.jpg"
-              alt="Top down view of walnut card tray with embedded magnets and card groove."
+              src={Merco3}
+              alt="Véhicule de transport confortable pour vos déplacements | E-Taxi"
               width="0"
               height="0"
               sizes="100vw"
@@ -56,8 +61,8 @@ function CarDetail() {
           
           <div>
             <Image
-              src="https://car-images.bauersecure.com/wp-images/12280/merc_e220d_coupe_03.jpg"
-              alt="Top down view of walnut card tray with embedded magnets and card groove."
+              src={Merco4}
+              alt="Véhicule de transport confortable pour vos déplacements | E-Taxi"
               width="0"
               height="0"
               sizes="100vw"

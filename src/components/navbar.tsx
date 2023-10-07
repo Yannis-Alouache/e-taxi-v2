@@ -11,11 +11,11 @@ import Link from 'next/link'
 
 export const navigationData = [
   { name: 'Accueil', href: '/' },
-  { name: 'Reservation', href: '#bookingBanner' },
-  { name: 'Services', href: '#services' },
-  { name: 'Véhicule', href: '#carDetail' },
-  { name: 'Avis Client', href: '#testimonials' },
-  { name: 'Blog', href: "blog" }
+  { name: 'Reservation', href: '/#bookingBanner' },
+  { name: 'Services', href: '/#services' },
+  { name: 'Véhicule', href: '/#carDetail' },
+  { name: 'Avis Client', href: '/#testimonials' },
+  { name: 'Blog', href: "/blog" }
 ]
 
 

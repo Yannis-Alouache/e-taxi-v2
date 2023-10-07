@@ -5,13 +5,15 @@ import Image from 'next/image'
 import heroBannerImage from "../assets/hero_banner_image.png"
 
 
-export default function HeroBanner() {
+export default function HeroBanner(props: any) {
+
+  let { isBlogPage } = props;
 
   return (
     <div id='heroBanner' className="isolate bg-[url('../assets/hero_banner_background.jpg')] bg-no-repeat -mt-14 ">
       <main>
         <div className="relative px-6 lg:px-8">
-          <div className="mx-auto max-w-5xl py-32 sm:py-48 lg:py-56">
+          <div className={ "mx-auto max-w-5xl py-32 sm:py-48 " + ( isBlogPage ? "lg:py-32" : "lg:py-56" )}>
             <div className="text-center">
               <h1 className="text-5xl font-bold tracking-tight text-white-900 sm:text-5xl mb-2">
                 Réservez votre Taxi maintenant

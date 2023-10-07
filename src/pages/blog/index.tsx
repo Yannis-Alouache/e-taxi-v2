@@ -2,7 +2,8 @@ import Footer from '@/components/footer'
 import BlogCardsLayout from '@/components/blogCardsLayout'
 import { Inter } from '@next/font/google'
 import Head from 'next/head'
-import BlogNavBar from '@/components/blogNavBar'
+import HeroBanner from '@/components/heroBanner'
+import Navbar from '@/components/navbar'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -19,7 +20,8 @@ export default function Blog() {
             <meta name="robots" content="index, follow" />
             <link rel="icon" href="/favicon.ico" />
         </Head>
-        <BlogNavBar />
+        <Navbar />
+        <HeroBanner isBlogPage={true} />
         <BlogCardsLayout />
         <Footer />
     </>
