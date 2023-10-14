@@ -1,8 +1,5 @@
-import { useState } from 'react'
-import { Dialog } from '@headlessui/react'
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import Image from 'next/image'
-import heroBannerImage from "../assets/hero_banner_image.png"
+import heroBannerImage from "../assets/hero_banner_image.webp"
 
 
 export default function HeroBanner(props: any) {
@@ -10,7 +7,7 @@ export default function HeroBanner(props: any) {
   let { isBlogPage } = props;
 
   return (
-    <div id='heroBanner' className="isolate bg-[url('../assets/hero_banner_background.jpg')] bg-no-repeat -mt-14 ">
+    <div id='heroBanner' className="isolate bg-[url('../assets/hero_banner_background.webp')] bg-no-repeat -mt-14 ">
       <main>
         <div className="relative px-6 lg:px-8">
           <div className={ "mx-auto max-w-5xl py-32 sm:py-48 " + ( isBlogPage ? "lg:py-32" : "lg:py-56" )}>

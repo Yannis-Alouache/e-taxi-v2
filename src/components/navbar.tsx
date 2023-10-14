@@ -5,7 +5,7 @@ import {
   XMarkIcon,
 } from '@heroicons/react/24/outline'
 import Image from 'next/image'
-import navBarLogo from "@/assets/navbar_logo.png"
+import navBarLogo from "@/assets/navbar_logo.webp"
 import Link from 'next/link'
 
 

@@ -1,5 +1,5 @@
 import Image from "next/image"
-import userLogo from "../assets/user.png"
+import userLogo from "../assets/user.webp"
 
 const testimonials = [
     {
