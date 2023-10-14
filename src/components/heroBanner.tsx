@@ -26,6 +26,7 @@ export default function HeroBanner(props: any) {
                     src={heroBannerImage}
                     alt="taxi"
                     width={750}
+                    priority={true}
                 />
               </div>
             </div>
